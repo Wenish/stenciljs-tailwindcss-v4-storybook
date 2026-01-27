@@ -1,4 +1,6 @@
 import { Config } from '@stencil/core';
+import { postcss } from '@stencil-community/postcss';
+import autoprefixer from 'autoprefixer';
 
 export const config: Config = {
   namespace: 'stenciljs-taildwindcss-v4-storybook',
@@ -23,4 +25,9 @@ export const config: Config = {
   testing: {
     browserHeadless: "shell",
   },
+  plugins: [
+    postcss({
+      plugins: [autoprefixer()]
+    })
+  ]
 };
