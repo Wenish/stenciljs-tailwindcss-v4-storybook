@@ -1,4 +1,6 @@
-@reference "tailwindcss";
+@layer theme, base, components, utilities;
+@import "./../../../node_modules/tailwindcss/theme.css" layer(theme);
+@import "./../../../node_modules/tailwindcss/preflight.css" layer(base);
 @tailwind utilities;
 
 :host {
