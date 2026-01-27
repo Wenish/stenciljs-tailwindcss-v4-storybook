@@ -4,6 +4,7 @@ import autoprefixer from 'autoprefixer';
 
 export const config: Config = {
   namespace: 'stenciljs-taildwindcss-v4-storybook',
+  globalStyle: 'src/global/global.css',
   outputTargets: [
     {
       type: 'dist',
@@ -27,7 +28,9 @@ export const config: Config = {
   },
   plugins: [
     postcss({
-      plugins: [autoprefixer()]
+      plugins: [
+        "@tailwindcss/postcss": {}
+      ]
     })
   ]
 };
