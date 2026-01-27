@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
 :root {
-  --color-primary: blue;
+    --color-primary: blue;
+}
+
+html {
+    @apply bg-gray-100 text-gray-900;
+    color: var(--color-primary);
 }
