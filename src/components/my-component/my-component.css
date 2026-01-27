@@ -1,3 +1,6 @@
+@reference "tailwindcss";
+@tailwind utilities;
+
 :host {
   display: block;
 }

@@ -1,9 +1,4 @@
-@import "tailwindcss";
 
 :root {
     --color-primary: blue;
-}
-
-html {
-    @apply bg-gray-100 text-red-700;
 }

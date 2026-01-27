@@ -1,6 +1,7 @@
 import { Config } from '@stencil/core';
 import { postcss } from '@stencil-community/postcss';
 import autoprefixer from 'autoprefixer';
+import tailwindcssPostcss from '@tailwindcss/postcss';
 
 export const config: Config = {
   namespace: 'stenciljs-taildwindcss-v4-storybook',
@@ -29,8 +30,9 @@ export const config: Config = {
   plugins: [
     postcss({
       plugins: [
-        "@tailwindcss/postcss"
-      ]
+        tailwindcssPostcss(),
+        autoprefixer(),
+      ],
     })
   ]
 };
