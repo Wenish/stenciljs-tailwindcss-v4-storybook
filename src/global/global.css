@@ -5,6 +5,5 @@
 }
 
 html {
-    @apply bg-gray-100 text-gray-900;
-    color: var(--color-primary);
+    @apply bg-gray-100 text-red-700;
 }

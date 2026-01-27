@@ -29,7 +29,7 @@ export const config: Config = {
   plugins: [
     postcss({
       plugins: [
-        "@tailwindcss/postcss": {}
+        "@tailwindcss/postcss"
       ]
     })
   ]
